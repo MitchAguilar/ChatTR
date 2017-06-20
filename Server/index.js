@@ -12,7 +12,7 @@ app.get('/MitchAguilar',function(req,res){
     res.status(200).send('<h1 style="color:red;">Not more</h1>');
 });
 io.on('connection',function(socket){
-    console.log('El nodo de ip: '+socket.handshake.address+" se vinculó");
+    console.log('El nodo de ip: '+socket.handshake.address+" se vinculó...");
 
 });
 

@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head >
-        <title>Mitch Aguilar</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
-        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-        <script src="main.js" ></script>
-        <style>
-            #messages{
-                width:95%;
-                max-width:400px;
-                height:350px;
-                overflow-y:scroll;
-                border:1px solid #eee;
-                box-shadow: 0px opx 20px #ccc inset;
-            }
-            .message{
-                margin: 20px;
-                padding: 5px;
-                border-radius:5px;
-                border:1px solid #ccc;
-                background: white;
-            }
-        </style>
-    </head>
+
+<head>
+    <title>Mitch Aguilar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="Style/Basic.css" rel="style" />
+
+    <!--style -->
+    <link rel="stylesheet" href="Style/css/bootstrap.css" rel="style" />
+    <script src="Style/js/bootstrap.js" type="text/javascript"></script>
+</head>
+
 <body>
-    <h1>Chats Mitch Aguilar</h1>
-    <div id="messages"></div>
-    <form onsubmit="return addMessage(this)">
-        <input id="nickname" type="text" placeholder="Nick">
-        <textarea id="text" placeholder="Mensaje..."></textarea>
-        <input type="submit" value="Enviar"/>
-    </form>
+    <div class="center">
+        <h1>Chats Mitch Aguilar</h1>
+        <div id="messages"></div>
+        <div class="col-md-6">
+            <form onsubmit="return addMessage(this)">
+                <input class="form-control" id="nickname" type="text" placeholder="Nick">
+                <br/>
+                <textarea class="form-control" id="text" placeholder="Mensaje..."></textarea>
+                <br/>
+                <input type="submit" value="Enviar" />
+            </form>
+
+        </div>
+    </div>
+
 </body>
+
 </html>

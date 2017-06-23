@@ -1,4 +1,5 @@
-var socket=io.connect('/^http/',{'forceNew':true});
+
+var socket=io.connect('https://chats-tr.herokuapp.com',{'forceNew':true});
 
 socket.on('messages', function(data){
     console.log(data);

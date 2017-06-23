@@ -4,8 +4,8 @@
   "description": "proyecto con socket.io y nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "node Server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Server/index.js",
+    "test": "jjjjj",
     "postinstall": "bower install && grunt build"
   },
   "author": "MitchAguilar",
